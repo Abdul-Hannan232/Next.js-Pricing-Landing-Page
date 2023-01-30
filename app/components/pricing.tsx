@@ -19,7 +19,7 @@ const ListItem = (props: StackProps) => {
   console.log("ListItem Props", props);
 
   return (
-    <HStack as="li" spacing={"20px"} {...rest}>
+    <HStack as="li" spacing={"5"} {...rest}>
       <Icon as={CheckIcon} w="22px" h="22px" />
       <Text>{children}</Text>
     </HStack>
@@ -31,7 +31,7 @@ const Pricing = () => {
     <Box
       maxW={"994px"}
       margin={"auto"}
-      mt="-256px"
+      mt="-64"
       bg="white"
       borderRadius={"12px"}
       overflow="hidden"

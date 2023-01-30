@@ -3,20 +3,20 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <Box as={"section"} pb="112px">
+    <Box as={"section"} pb="28">
       <Box
         textAlign={"center"}
-        color={"#F7FAFC"}
-        bg={"#6B46C1"}
-        pt={"88.45"}
-        pb={"198"}
-        px={"32px"}
+        color={"gray.50"}
+        bg={"purple.600"}
+        pt={"88.45px"}
+        pb={"198px"}
+        px={"8"}
         height={"397px"}
       >
-        <Heading fontWeight={800} fontSize="48px">
+        <Heading fontWeight={"extrabold"} fontSize="5xl">
           Simple pricing for your business
         </Heading>
-        <Text fontWeight={500} fontSize="24px" pt={"16.08"}>
+        <Text fontWeight={"medium"} fontSize="2xl" pt={"4"}>
           Plans that are carefully crafted to suit your business.
         </Text>
       </Box>
