@@ -1,6 +1,14 @@
 "use client";
 
-import { Box, HStack, Icon, StackProps, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Stack,
+  HStack,
+  Icon,
+  StackProps,
+  Text,
+} from "@chakra-ui/react";
 import { ElementType } from "react";
 import {
   MoneyBackIcon,
@@ -27,13 +35,18 @@ export const Feature = (props: FeatureProps) => {
 const Features = () => {
   return (
     <Box maxW={"1024px"} m="auto" pt={"57px"} pb={"40"}>
-      <HStack px={"12"} spacing="5">
+      <Stack
+        as={"ul"}
+        px={["6", "6", "12"]}
+        spacing="6"
+        direction={["column", "column", "row"]}
+      >
         <Feature icon={MoneyBackIcon}>30 days money back Guarantee</Feature>
         <Feature icon={SetupFeesIcon}>No setup fees 100% hassle-free</Feature>
         <Feature icon={MonthlySubscriptionIcon}>
           No monthly subscription Pay once and for all
         </Feature>
-      </HStack>
+      </Stack>
     </Box>
   );
 };
